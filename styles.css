@@ -420,3 +420,42 @@ li {
     width: 25px;
     height: 20px;
 }
+
+[contenteditable] {
+    position: relative;
+    overflow: hidden;
+    transition: border-radius 0.6s, background-color 0.6s ease, box-shadow 0.5s ease;
+}
+
+[contenteditable]:hover {
+    background-color: #fffff0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    outline: none;
+    border-radius: 10px;
+    color: #000;
+}
+
+[contenteditable]:focus {
+    background-color: #fbfbd5; 
+    box-shadow: none; 
+    outline: none;
+    border-radius: 10px;
+    color: #000;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 251, 5, 0.954);
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
