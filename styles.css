@@ -443,6 +443,19 @@ li {
     color: #000;
 }
 
+.download-button {
+    display: block;
+    margin-top: 10px;
+    padding: 20px;
+    border-width: 0;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+}
+
+.download-button:hover {
+    cursor: pointer;
+}
+
 .ripple {
     position: absolute;
     border-radius: 50%;
