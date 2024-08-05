@@ -45,7 +45,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./assets/img/profile-foto.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -307,7 +306,7 @@ body {
     background: #ffffff;
     border-radius: 6px;
     padding: 20px 0px 20px 0px;
-    margin-top: -10px;
+    margin-top: -15px;
     gap: 0;
 }
 
