@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media (max-width: 600px) {
-    .board {
-        grid-template-columns: 1fr;
-    }
-    .container {
-        background-color: #28D979;
-    }
-}
 
 * {
     margin: 0;
@@ -20,11 +12,12 @@ body {
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 950px;
-    height: 100%;
     padding: 20px 30px;
     background-color: #fff;
     display: flex;
@@ -222,6 +215,7 @@ body {
 }
 
 .interests {
+    width: 100%;
     padding: 15px;
     background-color: #F0F0F0;
     border-radius: 12px;
@@ -241,6 +235,7 @@ body {
 }
 
 .contact-container {
+    width: 100%;
     background-color: #000;
     color: #fff;
     padding: 20px;
@@ -447,8 +442,11 @@ li {
     display: block;
     margin-top: 10px;
     padding: 20px;
+    background-color: #F0F0F0;
+    font-size: 1.3rem;
+    font-weight: 600;
     border-width: 0;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: opacity 0.5s;
 }
 
@@ -470,5 +468,181 @@ li {
     to {
         transform: scale(4);
         opacity: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        padding: 13px 20px;
+    }
+    
+    .header {
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    
+    .header__intro {
+        padding: 10px;
+    }
+    
+    .header__title {
+        font-size: 0.8rem;
+        margin-bottom: 19px;
+    }
+    
+    .header__name {
+        font-size: 1rem;
+        margin-top: 3px;
+    }
+    
+    .header__profession {
+        font-size: 0.8rem;
+    }
+    
+    .header__languages {
+        padding: 10px;
+    }
+    
+    .languages__list {
+        gap: 3px;
+    }
+    
+    .languages__item {
+        font-size: 0.933rem;
+    }
+    
+    .languages__bar-wrapper {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px
+    }
+    
+    .languages__bar {
+        margin-left: 7px;
+        height: 7px;
+        padding: 2px;
+    }
+    
+    .main-content__section {
+        margin-bottom: 20px;
+    }
+    
+    .personal {
+        gap: 20px
+    }
+    
+    .education {
+        padding: 10px;
+    }
+    
+    .languages__title, .education__title, .interests__title, .contact__title, .experience__title, .tools__title {
+        font-size: 1.1rem;
+        margin-bottom: 19px;
+    }
+    
+    .board {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .education__item {
+        padding: 10px;
+    }
+    
+    .education__year {
+        font-size: 1rem;
+    }
+    
+    .education-wrapper {
+        margin-bottom: 7px;
+    }
+    
+    .education__institution {
+        font-size: 1rem;
+    }
+    
+    .extra-info {
+        gap: 20px;
+    }
+    
+    .interests {
+        padding: 10px;
+    }
+    
+    .interests__item {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-size: 1.1rem;
+    }
+    
+    .contact-container {
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+
+    .contact-container__wrapper {
+        flex-direction: column;
+    }
+    
+    .contact-container__email, .contact-container__phone {
+        width: 100%;
+        font-size: 1.1rem;
+        margin: auto;
+    }
+    
+    .contact-container__content {
+        margin-bottom: 10px;
+    }
+    
+    .contact-container__phone {
+        margin-top: 10px;
+        padding: 0;
+        border-left: none;
+    }
+    
+    .competence {
+        gap: 20px;
+    }
+    
+    .tools, .experience {
+        padding: 10px;
+    }
+    
+    .tools__content {
+        gap: 12px;
+    }
+    
+    .tools-board__title {
+        padding: 2px 5px;
+    }
+    
+    .tools-board__content {
+        padding: 12px 0px 12px 0px;
+    }
+    
+    .tools-icon {
+        width: 30px;
+        height: 30px;
+        margin: 12px auto;
+    }
+    
+    .experience-item {
+        margin-bottom: 10px;
+    }
+    
+    .experience-item__content {
+        gap: 12px;
     }
 }
